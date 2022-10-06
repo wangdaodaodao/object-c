@@ -38,8 +38,9 @@
 4.1声明:
    1)位置在interface大括号的外面;
    2)语法:-(返回值类型) 方法名称:(参数类型)形参名称
-    - (void) eat:(NSString *) foodName
-    定义一个没有返回值的方法,她的名字叫eat,他有一个参数,类型是nsssting,名字叫做foodname
+    - (void) eatwith:(NSString *) foodName
+    定义一个没有返回值的方法,她的名字叫eat,他有一个参数,类型是nsssting,名字叫做foodname;
+    方法名字最好取名**with***;
 4.2实现:
    1)位置在:implimentation中实现;
    2)语法: -(viod) run {方法实现代码};
@@ -54,7 +55,8 @@
    1)位置在interface大括号的外面;
    2)语法:-(返回值类型) 方法名称:(参数类型)形参名称1 :(参数类型)形参名称2:(参数类型)形参名称3;
     - (int) sum: (int)num1: (int)num2;
-    定义一个返回值类型int的方法,她的名字叫sum,他有2个参数,类型是int,名字叫做num1和num2
+    定义一个返回值类型int的方法,她的名字叫sum,他有2个参数,类型是int,名字叫做num1和num2;
+    方法名with方法名1:(数据类型)方法名1 andnum2 :(数据类型)方法名2 :
 5.2实现:
    1)位置在:implimentation中实现;
    2)语法: -(int) sum {方法实现代码};
@@ -75,6 +77,10 @@
 - (void)run;
 - (void)eat:(NSString *) foodName;
 - (int)sum: (int)num1 :(int)num2;
+// 函数命名的方法
+- (int)sumWith: (int)num1 and :(int) num2;
+- (int)sumWithNum1 :(int)num1 andnum2 :(int)num2;
+
 @end
 
 @implementation Person 
@@ -91,6 +97,15 @@
         return num3;
     }
 
+   - (int) sumWithNum1:(int)num1  andnum2:(int)num2{
+      int n = num1 + num2;
+      return n;
+   }
+
+   - (int)sumWith: (int)num1 and :(int) num2{
+      int n2 = num1 + num2;
+      return n2;
+   }
 
 @end
 
@@ -107,8 +122,9 @@ int main(int argc, const char *argv[])
     [p1 eat:@"苹果"];
     int sum = [p1 sum:10 :19];
     NSLog(@"求和的值为%d", sum);
+
 }
 
-//第23课
+//第26课截止
  
 

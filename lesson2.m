@@ -13,28 +13,24 @@
     @public
     NSString *_name;
     float _weight;
-
 }
 
 - (void)run;
-- (void) eat;
+- (void)eat;
 
 @end
 
 
 @implementation Sutdent
 - (void) run{
-    NSLog(@"我最开始的体重是%.1fkg,我快速的跑啊,我体重就轻了",_weight);
+    NSLog(@"--%@--最开始的体重是%.1fkg,快速的跑啊,体重就轻了",_name,_weight);
     _weight -= 0.5;
-    NSLog(@"跑完了,我的体重是%.2fkg", _weight);
-    
+    NSLog(@"跑完了,--%@--的体重是%.2fkg",_name, _weight);   
 }
 - (void) eat{
     NSLog(@"我最开始的体重是%.2f,我啊不停地吃", _weight);
     _weight += 0.7;
-    NSLog(@"我体重增加了,现在的体重为%.2f", _weight);
-
-    
+    NSLog(@"我体重增加了,现在的体重为%.2f", _weight);   
 }
 @end
 
@@ -56,7 +52,6 @@
     NSLog(@"我的名字叫%@, 今年%d岁了",_name,_age);
 
 }
-
 @end 
 
 
@@ -79,7 +74,7 @@ int main(){
 
     [s1 run];
     [s1 eat];
-    
+
     [s1 eat];
     [s1 eat];
 }

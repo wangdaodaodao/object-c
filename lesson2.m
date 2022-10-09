@@ -63,7 +63,7 @@ int main(){
 
     Person *p2 = [Person new];
     p2->_age = 90;
-    NSLog(@"2#王导导的年龄%d", p2 ->_age);
+    NSLog(@"2#王导导的年龄%d", p2->_age+1);
 
     Sutdent *s1 = [Sutdent new]; //
     s1->_name = @"小星星";
@@ -71,10 +71,12 @@ int main(){
 
     [s1 run];
     [s1 eat];
-
     [s1 run];
     [s1 eat];
+    
+    [s1 eat];
 
     [s1 eat];
-    [s1 eat];
 }
+
+// Menlo, Monaco, 'Fira Code', monospace

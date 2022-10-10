@@ -20,15 +20,15 @@
 */
 @interface Phone : NSObject{
 NSString *_phone;
-int _number;
+float _number;
 }
 
--(void)call:(int) number;
+-(void)callNumber:(float) number;
 @end
 
 @implementation Phone
--(void)call:(int) number{
-    NSLog(@"正在打电话%d,请稍等!!",number);
+-(void)callNumber:(float) number{
+    NSLog(@"正在打电话%.0f,请稍等!!",number);
 }
 
 @end
@@ -40,7 +40,7 @@ int _number;
 int main(int argc, const char *argv[]){
 
     Phone *p1 = [Phone new];
-    [p1 call:(int) 12];
+    [p1 callNumber:13782929301];
     return 0;
 
     

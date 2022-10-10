@@ -48,8 +48,6 @@
    1):方法无法直接调用,必须要创造对象,实例化;
    2)调用语法: [对象名 方法名:实参];
 
-
-
 5.带多个参数的方法:
 5.1声明:
    1)位置在interface大括号的外面;
@@ -77,7 +75,7 @@
 - (void)run;
 - (void)eat:(NSString *) foodName;
 - (int)sum: (int)num1 :(int)num2;
-// 函数命名的方法
+// 多个参数的函数命名的方法
 - (int)sumWith: (int)num1 and :(int) num2;
 - (int)sumWithNum1 :(int)num1 andnum2 :(int)num2;
 

@@ -28,9 +28,9 @@
     NSLog(@"跑完了,--%@--的体重是%.2fkg",_name, _weight);   
 }
 - (void) eat{
-    NSLog(@"我最开始的体重是%.2f,我啊不停地吃", _weight);
+    NSLog(@"我最开始的体重是%.2fkg,我啊不停地吃", _weight);
     _weight += 0.7;
-    NSLog(@"我体重增加了,现在的体重为%.2f", _weight);   
+    NSLog(@"我体重增加了,现在的体重为%.2fkg", _weight);   
 }
 @end
 
@@ -55,7 +55,7 @@
 @end 
 
 
-int main(){
+int main(int argc, const char *argv[]){
     Person *p1 = [Person new];
     p1->_name = @"1#王导导";
     p1 -> _age = 100;

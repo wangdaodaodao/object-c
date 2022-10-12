@@ -5,6 +5,19 @@
 //  Created by 王导导 on 2022/10/6.
 //第28课
 
+
+
+
+
+/*
+属性命名的单词必须_开头;
+类的命名单词必须手写字母大写;
+属性声明的时候不能直接赋值,初始化
+
+
+*/
+
+
 #import <Foundation/Foundation.h>
 
 
@@ -13,6 +26,7 @@
     @public
     NSString *_name;
     float _weight;
+    // NSString *_ss = @"hhhh" 不能赋值;
 }
 
 - (void)run;

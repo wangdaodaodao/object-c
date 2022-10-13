@@ -11,3 +11,29 @@
 
 
 */
+#import <Foundation/Foundation.h>
+
+@interface dog : NSObject{
+    @public
+    NSString *_name;
+    int _age;
+    float _weight;
+
+}
+-(void)setName;
+
+@end
+
+@implementation dog
+    -(void)setName{
+     NSLog(@"Dog,hhhh");
+    }
+@end
+
+
+int main(){
+    dog *d1 = [dog new];
+
+    [d1 setName];
+
+}

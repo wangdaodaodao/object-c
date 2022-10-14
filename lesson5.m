@@ -27,14 +27,32 @@
 
 
 
+@interface dog : NSObject{
+    @public
+    NSString *_name;
+    int _age;
+    float _weight;
 
-void cat(){
-    NSLog(@"cat test");
 }
+-(void)setName;
+-(void)setBehavior :(NSString *)dodo;
+
+@end
+
+@implementation dog
+    -(void)setName{
+     NSLog(@"Dog,hhhh");
+    }
+
+    -(void)setBehavior: (NSString *) dodo{
+        NSLog(@"a他在%@", dodo);
+    }
+@end
 
 
 int main(){
+    dog *d1 = [dog new];
+    [d1 setName];
+    [d1 setBehavior: @"吃发"];
 
-    return 0;
-
-    }
+}

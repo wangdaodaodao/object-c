@@ -27,7 +27,7 @@
 
 
 
-@interface dog : NSObject{
+@interface Dog : NSObject{
     @public
     NSString *_name;
     int _age;
@@ -39,19 +39,19 @@
 
 @end
 
-@implementation dog
+@implementation Dog
     -(void)setName{
-     NSLog(@"Dog,hhhh");
+     NSLog(@"它的名字叫做dog");
     }
 
     -(void)setBehavior: (NSString *) dodo{
-        NSLog(@"a他在%@", dodo);
+        NSLog(@"它在-->>%@", dodo);
     }
 @end
 
 
 int main(){
-    dog *d1 = [dog new];
+    Dog *d1 = [Dog new];
     [d1 setName];
     [d1 setBehavior: @"吃发"];
 

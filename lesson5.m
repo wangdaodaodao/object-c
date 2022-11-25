@@ -41,7 +41,7 @@
 
 @implementation Dog
     -(void)setName{
-     NSLog(@"它的名字叫做dog");
+     NSLog(@"它本来的名字叫做dog1#");
     }
 
     -(void)setBehavior: (NSString *) dodo{
@@ -52,7 +52,9 @@
 
 int main(){
     Dog *d1 = [Dog new];
+    d1 -> _name = @"狗";
     [d1 setName];
+    NSLog(@"现在给她取的名字是%@2#", (*d1)._name);
     [d1 setBehavior: @"吃发"];
 
 }
